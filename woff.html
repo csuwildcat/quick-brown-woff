@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Quick Brown WOFF</title>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+
+  <style>
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-size: calc(0.85em + 0.4vmin);
+      background: lightblue;
+      overflow: hidden;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div id="top">
+    <span class="the"></span>
+    <span class="quick"></span>
+    <span class="brown"></span>
+    <span class="fox"></span>
+  </div>
+
+  <div id="images">
+    <img />
+    <img />
+  </div>
+
+  <div id="bottom">
+    <span class="jumps"></span>
+    <span class="over"></span>
+    <span class="the"></span>
+    <span class="lazy"></span>
+    <span class="dog"></span>
+  </div>
+
+
+<script src="js/promise.min.js"></script>
+<script src="js/fontfaceobserver.js"></script>
+<script src="js/load-fonts.js"></script>
+<script>
+  // https://fonts.googleapis.com/css?family=Roboto|Lato|Source+Sans+Pro|Droid+Sans|Arimo|Noto+Sans|Hind|Muli|Asap
+  loadFonts('woff', ['the', 'quick', 'brown', 'fox', 'jumps', 'over', 'lazy', 'dog']);
+</script>
+
+</body>
+
+</html>
