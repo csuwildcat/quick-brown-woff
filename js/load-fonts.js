@@ -1,6 +1,7 @@
 
 function loadFonts(type, fonts){
   var index = 0;
+  var length = fonts.length;
   var start = new Date().getTime();
   var load = function(name){
     var tag = document.createElement('style');
@@ -14,7 +15,9 @@ function loadFonts(type, fonts){
     document.head.appendChild(tag);
     new FontFaceObserver(name).check().then(function(){
       document.body.setAttribute('fonts', (document.body.getAttribute('fonts') || '') + ' ' + name);
-      var next = fonts[++index];
+      var nextIndex = ++index;
+      var next = fonts[nextIndex];
+      if (nextIndex <= length) document.body.setAttribute('jump', nextIndex);
       if (next) load(next);
       else console.log((new Date().getTime() - start) / 1000);
     });
