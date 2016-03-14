@@ -1,0 +1,125 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial;
+  font-size: calc(0.6em + 0.6vmin);
+  background: lightblue;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 4em;
+  padding: 0.5em;
+  text-align: center;
+  color: rgba(0,0,0,0.15)
+}
+
+#top, #bottom {
+  position: absolute;
+  width: 100%;
+  padding: 0 2em;
+  font-size: 2.5em;
+  font-weight: bold;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#top {
+  bottom: 50%;
+  -webkit-transform: translateY(-4em);
+  transform: translateY(-4em);
+}
+
+#bottom {
+  top: 50%;
+  -webkit-transform: translateY(4em);
+  transform: translateY(4em);
+}
+
+#images {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 20em;
+}
+
+#images div {
+  position: absolute;
+  top: 50%;
+  width: 10em;
+}
+
+#images img {
+  display: block;
+  position: absolute;
+  left: 50%;
+  max-width: 75%;
+  -webkit-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+}
+
+#brown_fox {
+  height: 20em;
+  margin: -10.5em 0 0 -5em;
+  -webkit-transform: rotate(-38deg);
+  transform: rotate(-38deg);
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+}
+
+#brown_fox img {
+  bottom: 100%;
+}
+
+#lazy_dog {
+  margin: -9.5em 0 0 -5em;
+}
+
+#lazy_dog img {
+  top: 100%;
+}
+
+[jump="1"] #brown_fox {
+  -webkit-transform: rotate(-28.5deg);
+  transform: rotate(-28.5deg);
+}
+
+[jump="2"] #brown_fox {
+  -webkit-transform: rotate(-19deg);
+  transform: rotate(-19deg);
+}
+
+[jump="3"] #brown_fox {
+  -webkit-transform: rotate(-9.5deg);
+  transform: rotate(-9.5deg);
+}
+
+[jump="4"] #brown_fox {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+[jump="5"] #brown_fox {
+  -webkit-transform: rotate(9.5deg);
+  transform: rotate(9.5deg);
+}
+
+[jump="6"] #brown_fox {
+  -webkit-transform: rotate(19deg);
+  transform: rotate(19deg);
+}
+
+[jump="7"] #brown_fox {
+  -webkit-transform: rotate(28.5deg);
+  transform: rotate(28.5deg);
+}
+
+[jump="8"] #brown_fox {
+  -webkit-transform: rotate(38deg);
+  transform: rotate(38deg);
+}
